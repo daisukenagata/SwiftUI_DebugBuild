@@ -13,6 +13,10 @@ struct ContentView: View {
     @State var returnRes = [""]
     @ObservedObject var c = CheckBuild()
 
+    init() {
+        read()
+    }
+
     var body: some View {
 
         VStack {
@@ -20,9 +24,6 @@ struct ContentView: View {
         Text(c.count.description)
         Text(c.os)
         Text(c.uuidSet)
-        }
-        .onAppear {
-            read()
         }
     }
 
