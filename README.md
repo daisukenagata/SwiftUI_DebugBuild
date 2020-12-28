@@ -1,5 +1,7 @@
 # SwiftUI_DebugBuild
 
+### blog
+https://t.co/D1NuRj7wbg?amp=1
 
 ### Please set your uuid
 
