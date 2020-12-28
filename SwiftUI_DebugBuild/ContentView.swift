@@ -11,7 +11,7 @@ import Combine
 struct ContentView: View {
 
     @State var returnRes = [""]
-    @ObservedObject var c = CheckBuld()
+    @ObservedObject var c = CheckBuild()
 
     var body: some View {
 
@@ -42,7 +42,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 
-final class CheckBuld: ObservableObject {
+final class CheckBuild: ObservableObject {
 
     @Published var statusCode: Int = 0
     @Published var count: String = ""
