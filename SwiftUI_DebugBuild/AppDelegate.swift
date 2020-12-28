@@ -6,13 +6,24 @@
 //
 
 import UIKit
+import SwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    @State var returnRes = [""]
+    @ObservedObject static var c = CheckBuild()
 
+    private func read() {
+
+        if let urls = Bundle.main.path(forResource: "uuid", ofType:"plist" ) {
+            let plist = NSDictionary(contentsOfFile: urls) as? Dictionary<String, String>
+            AppDelegate.c.res(treturnRes: returnRes, uuid: plist?["uuid"] ?? "")
+        }
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        read()
         // Override point for customization after application launch.
         return true
     }

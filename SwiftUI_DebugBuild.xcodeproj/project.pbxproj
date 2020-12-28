@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB751B0A259A6D3C0023EC0B /* CheckBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB751B09259A6D3C0023EC0B /* CheckBuild.swift */; };
 		BB82068025999818004F8A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82067F25999818004F8A72 /* AppDelegate.swift */; };
 		BB82068225999818004F8A72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82068125999818004F8A72 /* SceneDelegate.swift */; };
 		BB82068425999818004F8A72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82068325999818004F8A72 /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB751B09259A6D3C0023EC0B /* CheckBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBuild.swift; sourceTree = "<group>"; };
 		BB82067C25999818004F8A72 /* SwiftUI_DebugBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_DebugBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB82067F25999818004F8A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB82068125999818004F8A72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				BB82068125999818004F8A72 /* SceneDelegate.swift */,
 				BB8206B225999826004F8A72 /* Time.swift */,
 				BB82068325999818004F8A72 /* ContentView.swift */,
+				BB751B09259A6D3C0023EC0B /* CheckBuild.swift */,
 				BB82068525999818004F8A72 /* Assets.xcassets */,
 				BB82068A25999818004F8A72 /* LaunchScreen.storyboard */,
 				BB82068D25999818004F8A72 /* Info.plist */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB751B0A259A6D3C0023EC0B /* CheckBuild.swift in Sources */,
 				BB8206B325999826004F8A72 /* Time.swift in Sources */,
 				BB82068025999818004F8A72 /* AppDelegate.swift in Sources */,
 				BB82068225999818004F8A72 /* SceneDelegate.swift in Sources */,
