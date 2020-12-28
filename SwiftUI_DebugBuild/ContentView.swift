@@ -65,7 +65,7 @@ final class CheckBuild: ObservableObject {
         let date = formatter.string(from: now)
         let d:[String] = date.description.components(separatedBy: "/")
 
-        let myURL = "https://7tslpj7nwg.execute-api.ap-northeast-1.amazonaws.com/default/DateTime?year=\(d[0])&month=\( d[1])&day=\(d[2])&hour=\(d[3])&os=\(UIDevice.current.systemVersion.description)&uuid=\(uuid)"
+        let myURL = "https://7tslpj7nwg.execute-api.ap-northeast-1.amazonaws.com/default/DateTime?year=\(d[0])&month=\( d[1])&day=\(d[2])&os=\(UIDevice.current.systemVersion.description)&uuid=\(uuid)"
 
         let encodeUrlString: String = myURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         guard let url = URL(string: encodeUrlString) else { return }
