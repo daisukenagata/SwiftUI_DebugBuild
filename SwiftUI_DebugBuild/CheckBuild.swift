@@ -21,17 +21,7 @@ final class CheckBuild: ObservableObject {
 
     func res(treturnRes: [String], uuid: String) {
 
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy/MM/dd/HH"
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.timeZone = TimeZone(abbreviation: "GMT")
-        formatter.calendar = Calendar(identifier: .gregorian)
-
-        let now = Date()
-        let date = formatter.string(from: now)
-        let d:[String] = date.description.components(separatedBy: "/")
-
-        let myURL = "https://7tslpj7nwg.execute-api.ap-northeast-1.amazonaws.com/default/DateTime?year=\(d[0])&month=\( d[1])&day=\(d[2])&os=\(UIDevice.current.systemVersion.description)&uuid=\(uuid)"
+        let myURL = "https://7tslpj7nwg.execute-api.ap-northeast-1.amazonaws.com/default/DateTime?&os=\(UIDevice.current.systemVersion.description)&uuid=\(uuid)"
 
         let encodeUrlString: String = myURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         guard let url = URL(string: encodeUrlString) else { return }
