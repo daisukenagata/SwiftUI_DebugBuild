@@ -21,7 +21,7 @@ final class CheckBuild: ObservableObject {
 
     func res(treturnRes: [String], uuid: String) {
 
-        let myURL = "https://7tslpj7nwg.execute-api.ap-northeast-1.amazonaws.com/default/DateTime?&os=\(UIDevice.current.systemVersion.description)&uuid=\(uuid)"
+        let myURL = "https://7tslpj7nwg.execute-api.ap-northeast-1.amazonaws.com/default/DateTime?&os=\(UIDevice.current.systemVersion.description)&uuid=\(uuid)&type=ios"
 
         let encodeUrlString: String = myURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         guard let url = URL(string: encodeUrlString) else { return }
