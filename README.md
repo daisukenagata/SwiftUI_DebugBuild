@@ -4,7 +4,7 @@
 
 https://t.co/D1NuRj7wbg?amp=1
 
-https://dbank0208.com/wp/2021/01/03/purpose_and_content/
+https://dbank0208.com/2021/01/03/purpose_and_content/
 
 ### Example
 
