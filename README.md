@@ -2,10 +2,7 @@
 
 ### blog
 
-https://t.co/D1NuRj7wbg?amp=1
-
-https://dbank0208.com/2021/01/03/purpose_and_content/
-
+https://dbank0208.com/2020/12/28/swiftui_debugbuild/
 ### Example
 
 https://twitter.com/dbank0208/status/1345369154748993537?s=20
